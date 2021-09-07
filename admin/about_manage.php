@@ -65,4 +65,5 @@ while($row = fetch_array($rs)){
 }
 ?>
 </body>
+	
 </html>
