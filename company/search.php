@@ -342,7 +342,6 @@ $strout=str_replace("{#formcity}","",$strout);
 }
 $strout=str_replace("{#formxiancheng}",formxiancheng(),$strout);
 $strout=str_replace("{#selected}",$selected,$strout);
-
 $strout=str_replace("{#numperpage}",showselectpage("company",$page_size,$b,"",$page),$strout);
 $strout=str_replace("{#form_keyword}",$keyword,$strout);
 $strout=str_replace("{#sitebottom}",sitebottom(),$strout);
