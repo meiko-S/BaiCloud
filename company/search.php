@@ -197,7 +197,6 @@ function formxiancheng(){
 	}
 	return $str;
 }
-
 if ($b<>"" || $s<>"" || $province<>"" || $city<>"" || $xiancheng<>"" ) {
 		$selected="<tr>";
 		$selected=$selected."<td align='right'>已选条件：</td>";
