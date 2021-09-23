@@ -10,6 +10,7 @@ WriteErrMsg($fp.'模板文件不存在');
 exit;
 }
 $f = fopen($fp,'r');
+
 $strout = fread($f,filesize($fp));
 fclose($f);
 $strout=str_replace("{#siteskin}",$siteskin,$strout) ;
