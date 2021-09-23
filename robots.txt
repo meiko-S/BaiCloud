@@ -1,4 +1,4 @@
 User-agent:*
 Disallow:/admin/
 Disallow:/user/
-Disallow:/user/
+Disallow:/main/
