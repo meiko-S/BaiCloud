@@ -11,7 +11,7 @@ $province=$_GET["province"];
 $province="";
 }
 $provincezm=$province;
-$province=trim(province_zm2hz($province));//省份名从记事本中的数组中读出的，得加trim去除去两端空白内容，否则无法从数据库中读取到内容
+$province=trim(province_zm2hz($province));//鐪佷唤鍚嶄粠璁颁簨鏈腑鐨勬暟缁勪腑璇诲嚭鐨勶紝寰楀姞trim鍘婚櫎鍘讳袱绔┖鐧藉唴瀹癸紝鍚﹀垯鏃犳硶浠庢暟鎹簱涓鍙栧埌鍐呭
 $fp="../template/".$siteskin."/area_show.htm";
 $f = fopen($fp,'r');
 $strout = fread($f,filesize($fp));
@@ -27,4 +27,5 @@ $strout=str_replace("{#sitebottom}",sitebottom(),$strout);
 $strout=str_replace("{#sitetop}",sitetop(),$strout);
 $strout=showlabel($strout);
 echo  $strout;
+
 ?>
